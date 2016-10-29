@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="cose">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> </title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">  
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/owl.transitions.css">
+
+
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/animate.css">
+
+
+
+
+  <style type="text/css">
+  html{
+    height: 100%;
+  }
+
+  body{
+      margin: 0px auto;
+      height: 100%;
+      font-family: 'Segoe UI';
+      color: #ffffff;
+    }
+
+    h2{
+    	font-size: 52px;
+    }
+
+    h3{
+    	font-weight: lighter;
+    	font-size: 40px;
+    }
+
+    h4{
+    	font-size: 23px;
+    	opacity: 0.8;
+    }
+
+   
+
+    .bottom{
+    	height: 300px;
+    	width: 100%;
+    	background-color: #a0a0a0;
+    }
+
+
+   .main{
+   	background-color: #5050ca;
+   	height: 800px;
+   	background: url(main.png);
+   	background-size: fill;
+   	overflow: hidden;
+   }
+
+   #main{
+   		padding-top: 50px;
+   }
+
+   .cd-tabs-navigation  {
+  background: url(main.png) 100%;
+    background-size: fill;
+    width: 1000px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+   .anc{
+   	height: 0px;
+   	margin: 0px;
+   }
+
+   .block{
+   	margin-top: -55px;
+   	margin-bottom: -5px;
+   	height: 800px;
+   	background-color: #50f0ca;
+   	background: url(http://krasiviekvartiri.ru/images/backgrounds/services_bg.jpg) 0% 90% no-repeat;
+   	background-size: cover;
+   }
+
+   .button{
+   	position: relative;
+   	height: 60px;
+   	width: 500px;
+   	background-color: #dd4b4a;
+   	transition: all 0.5s;
+   	margin: auto;
+   	top: -30px;
+   	border-radius: 60px;
+   }
+
+
+	.button a{
+	margin-left: 40px;
+	font-size: 30px;
+}
+
+
+a {
+    font-size: 30px;
+    color: #fefefe;
+    text-decoration: none;
+    line-height: 50px;
+	transition: all 0.3s;
+}
+
+
+a:focus{
+	color: #fefefe;
+	transition: all 0.1s;
+	text-decoration: none;
+}
+
+.button a:hover{
+	color: #fefefe;
+	transition: all 0.3s;
+	text-decoration: none;
+}
+
+.button .active {
+    font-size: 30px;
+    color: #fefefe;
+    text-decoration: none;
+    line-height: 50px;
+	transition: all 0.1s;
+}
+
+
+   .button:hover{
+   	transition: all 0.2s;
+   	transform: scale(1.1);
+   	box-shadow: 0 0 20px #dd4b4a;
+   }
+
+   .left{
+   	margin-top: 0px;
+   }
+
+   .left span{
+   	font-size: 100px;
+   	font-family: arial;
+   	font-weight: bolder;
+   	color: #ffffff;
+   }
+
+   #map{
+   	height: 700px;
+   	width: 100%;
+   }
+
+   #undermap{
+   	top: -710px;
+   	position: relative;
+   	height: 100%;
+   	width: 100%;
+   }
+
+   #card{
+   	display: none;
+   	top: 100px;
+   	left: 10%;
+   	position: relative;
+   	background-color: #fefefe;
+   	width: 600px;
+   	height: 600px;
+   	color: #000;
+   	padding: 30px;
+   }
+
+
+
+
+
+
+
+
+
+.panel-body{
+  font-size: 20px;
+  font-weight: lighter;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: #000000;
+}
+.spoiler-trigger{
+  width: 90%;
+}
+.title{
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 80px;
+}
+
+.panel-heading{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.spoiler > input + label:after{content: "";float: right; font-style: lighter;}
+.spoiler > input:checked + label:after{content: "";float: right;}
+.spoiler > input{display:none;}
+.spoiler > input + label , .spoiler > .spoiler_body{background:#fff;padding:5px 15px;overflow:hidden;width:100%;box-sizing: border-box;display: block;}
+.spoiler > input + label + .spoiler_body{display:none;}
+.spoiler > input:checked + label + .spoiler_body{display: block;}
+.spoiler > .spoiler_body{background: #FFF;border: 3px solid #fff;border-top: none;}
+
+
+
+.menu {
+
+    	top: 110px;
+   		position: absolute;
+    width: 100%;
+    height: 45px;
+    background: #51555f;/*
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;*/
+   	z-index: 99;
+}
+
+.topMenu{
+    
+}
+
+    .fix_menu{
+    	position: fixed;
+    top: 0;
+    }
+
+    .abs_menu{
+    	/*opacity: 0;*/
+    }
+
+
+.light-menu {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    background-color:rgba(4, 180, 49, 0.6);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#menu-center {
+    width: 100%;
+    height: 40px;
+    margin: -5px auto;
+}
+#menu-center ul {
+    margin: 0px 0 0 0;
+}
+#menu-center ul li {
+    list-style: none;
+    margin: 0 20px 0 20px;
+    display: inline;
+}
+.active {
+    font-size: 20px;
+    color: #dd4b4a;
+    text-decoration: none;
+    line-height: 50px;
+	transition: all 0.1s;
+}
+a {
+    font-size: 16px;
+    color: #fefefe;
+    text-decoration: none;
+    line-height: 50px;
+	transition: all 0.3s;
+}
+
+
+a:focus{
+	color: #fefefe;
+	transition: all 0.1s;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #1eb1f1;
+	transition: all 0.3s;
+	text-decoration: none;
+}
+
+#phone{
+	transition: all 0.3s;
+	z-index: 3;
+}
+
+#phone:hover{
+	color: #dd4b4a;
+	transform: scale(1.1);
+	transition: all 0.3s;
+}
+
+
+
+#owl-example .item{
+  margin: 3px;
+}
+#owl-example .item img{
+  display: block;
+  width: 100%;
+  max-height: 100%;
+}
+
+
+#works{
+	margin-top: 50px;
+   	height: 550px;
+   	background-color: #fefefe;
+   	margin-bottom: 50px;
+}
+
+#works h1{
+	color: #000;
+	font-size: 70px;
+	font-weight: lighter;
+	margin-bottom: 50px;
+}
+  
+#callback{
+	padding-top: 100px;
+	background: url(http://krasiviekvartiri.ru/images/backgrounds/services_bg.jpg) 50% 50% no-repeat #51555f;
+	background-size: auto 100%;
+	padding-bottom: 50px;
+}
+
+#callback .container{
+	width: 100%:;
+}
+
+#callback h1{
+	font-size: 70px;
+	font-weight: lighter;
+	margin-bottom: 20px;
+}
+
+
+#callback h3{
+	border-bottom: solid #fefefe 1px;
+	padding: 15px;
+	margin-top: 0px;
+}
+
+#callback{
+	font-size: 15px;
+}
+
+.call{
+	display: inline-block;
+	vertical-align: top;
+	border: solid #fefefe 2px;
+	width: 300px;
+	padding: 10px;
+	margin: 30px;
+}
+
+.call p{
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+#plus{
+	margin-top: 0px;
+	padding: 50px;
+	margin-bottom: -0px;
+    text-align: center;
+    height: 600px;
+}
+
+#price{
+	margin-top: 0px;
+	background: #fefefe;
+}
+
+
+/*.ui-tabs.ui-tabs-vertical {
+    padding: 0;
+    width: 42em;
+}
+.ui-tabs.ui-tabs-vertical .ui-widget-header {
+    border: none;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav {
+    float: left;
+    width: 10em;
+    background: #CCC;
+    border-radius: 4px 0 0 4px;
+    border-right: 1px solid gray;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li {
+    clear: left;
+    width: 100%;
+    margin: 0.2em 0;
+    border: 1px solid gray;
+    border-width: 1px 0 1px 1px;
+    border-radius: 4px 0 0 4px;
+    overflow: hidden;
+    position: relative;
+    right: -2px;
+    z-index: 2;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a {
+    display: block;
+    width: 100%;
+    padding: 0.6em 1em;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a:hover {
+    cursor: pointer;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: 0.2em;
+    padding-bottom: 0;
+    border-right: 1px solid white;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li:last-child {
+    margin-bottom: 10px;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-panel {
+    float: left;
+    width: 28em;
+    border-left: 1px solid gray;
+    border-radius: 0;
+    position: relative;
+    left: -1px;
+}
+*/
+
+
+#form{
+
+color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.phonecard {
+	position: absolute;
+	top: 0px;
+	left: 30%;
+  height: 400px;
+  width: 400px;
+  background: #fff;
+  font-family: "Segoe UI";
+  display: block;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out;
+}
+
+.phonecard:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.phonecard .active {
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  cursor:auto;
+}
+
+.active>i {
+  margin: 0 15px;
+  transform: rotate(360deg);
+  cursor:pointer;
+}
+
+
+.active>.field {
+  visibility:visible;
+  opacity:1;
+  width: 80%;
+  height:100%;
+  transition-delay: 0.2s;
+}
+
+.head {
+  display: block;
+  position: relative;
+  font-size: 35px;
+  color: #dd4b4a;
+  margin-top: -40px;
+}
+
+.field {
+  display: block;
+  width: 80%;
+  margin: 25px auto;
+  top: 50px;
+  height: 300px;
+  position: relative;
+}
+
+.form-group {
+  position: relative;
+  margin: 25px auto;
+  text-align: left;
+}
+
+.form-group input {
+  height: 30px;
+  font-size: 20px;
+
+}
+
+.form-group .control-label {
+  position: absolute;
+  top: 0.25rem;
+  float: left;
+  pointer-events: none;
+  z-index: 1;
+  color: #9e9e9e;
+  font-size: font-size: 25px;;
+  font-weight: normal;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+}
+
+.fab .control-label{
+  color:#fff;
+}
+
+.form-group .bar {
+  position: relative;
+  border-bottom: 0.0625rem solid #9e9e9e;
+  display: block;
+}
+
+.form-group .bar::before {
+  content: '';
+  height: 0.125rem;
+  width: 0;
+  left: 50%;
+  bottom: -0.0625rem;
+  position: absolute;
+  background: #dd4b4a;
+  -webkit-transition: left 0.28s ease, width 0.28s ease;
+  transition: left 0.28s ease, width 0.28s ease;
+  z-index: 2;
+}
+
+.form-group input {
+  display: block;
+  background: none;
+  padding: 0.125rem 0.125rem 0.0625rem;
+  border-width: 0;
+  border-color: transparent;
+  line-height: 1.9;
+  width: 100%;
+  color: transparent;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+  box-shadow: none;
+  font-size: 20px;
+}
+
+.form-group input[type="file"] {
+  line-height: 1;
+}
+
+.form-group input[type="file"] ~ .bar {
+  display: none;
+}
+
+.form-group input:focus,
+.form-group input:valid,
+.form-group input.form-file,
+.form-group input.has-value {
+  color: #333;
+}
+
+.form-group input:focus ~ .control-label,
+.form-group input:valid ~ .control-label,
+.form-group input.form-file ~ .control-label,
+.form-group input.has-value ~ .control-label {
+  font-size: 15px;
+  color: gray;
+  top: -1rem;
+  left: 0;
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+.form-group input:focus ~ .control-label {
+  color: #dd4b4a;
+}
+
+.form-group input:focus ~ .bar::before {
+  width: 100%;
+  left: 0;
+}
+
+.btn {
+  position: relative;
+  background: #dd4b4a;
+  border: 1px solid #dd4b4a;
+  font-size: 25px;
+  color: #4f93ce;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  background: #071017;
+  border: 50vh solid #1d4567;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.btn:hover {
+  color: #337ab7;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+
+	color: #fff;
+	font-size: 30px;
+	transition: all 0.3s;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+input {
+	font-size: 20px;
+}
+
+/*#main:hover .phonecard{
+	left: 30%;
+	transition: 0.3s;
+}*/
+
+#main:hover #phone{
+
+	transition: 0.3s;
+}
+
+
+
+
+header{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+	width: 100%;
+    height: 107px;
+    background: #fff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    color: #000;
+}
+
+.wrapper {
+    display: block;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+
+header .wrapper {
+    padding: 33px 0 0;
+    overflow: hidden;
+}
+
+.logo {
+    display: block;
+    width: 307px;
+    height: 60px;
+    background: url(http://gruztaxi24.ru/wp-content/uploads/2011/06/%D0%91%D0%B5%D0%B7%D1%8B%D0%BC%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9.jpg) no-repeat;
+    position: relative;
+    padding-left: 100px;
+    font-family: 'Segoe UI';
+}
+
+header .contacts {
+    font: 14px/18px Intro;
+    text-align: center;
+    float: right;
+    margin-top: -80px;
+}
+
+header .button a{
+    font: 14px;
+    margin-top: -100px;
+    margin-left: 10px;
+}
+
+header .button{
+	width: 200px;
+}
+
+header .contacts .phone {
+    display: block;
+    font: 900 22px/24px Intro;
+    color: #0f293d;
+}
+
+.cd-tabs{
+	color: #000;
+}
+
+
+  </style>
+
+
+
+</head>
+<body>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/main.js"></script>
+
+
+<header style="width: 100%;">
+<div class="wrapper">
+	
+	<!-- Logo -->
+	<a href="/" class="logo" style="color: #000;">
+		<p>
+			лидер в сфере электрики
+		</p>
+	</a>
+	
+	<!-- Button -->
+	
+	
+	<div class="separator"></div>
+	
+	<!-- Phone -->
+	<div class="contacts">
+		<a href="tel:84952222682" class="phone transition">
+			<span class="transition">8 (495) </span>222-26-82</a>
+		круглосуточно, без выходных
+
+		<div style="margin-top: 35px; height: 35px; width: 120px" class="button"><a style="margin-top: -20px; font-size: 18px; line-height: 30px; margin-left: -1px;" href="#buy">Заказать!</a></div>
+	</div>
+	
+	<div class="clear"></div>
+	
+</div>
+</header>
+
+
+<div class="m1 menu">
+    <div id="menu-center">
+        <ul class="text-uppercase  text-center">
+            <li><a class="active" href="#main">ГЛАВНАЯ</a>
+
+            <!--</li>
+            <li><a href="#plus">преимущества</a>-->
+
+            </li>
+            <li><a href="#price">УСЛУГИ И ЦЕНЫ </a>
+
+            </li>
+            <li><a href="#works">НАШИ РАБОТЫ</a>
+
+            </li>
+            <li><a href="#callback">отзывы</a>
+
+            </li>
+            <li><a href="#main" style="color:#dd4b4a">заказать</a>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container-fluid main">
+
+<div class="container" id="main">
+
+<br>
+
+
+	<div class="left col-md-12 text-center">
+		<span class="">Электрик</span>
+		<h2 style="margin-top: 10px;">В Новосибирске и области</h2>
+		<h3 style="margin-top: 15px; z-index: 50;">Лучшая цена и качество!</h3>
+	</div>
+	<div class="left col-md-5">
+	<img src="111.png" style="margin-top: -110px; margin-left: -30px; height: 100%; z-index: 5;">
+		<!--
+		<br><br><br><br><br><br><br><br>
+		<h4 >Для бесплатного вызова мастера просто позвоните по номеру </h4>
+		<h1 style="font-size: 57px; margin-top: 50px;" id="phone1">+7 993 018 69 82</h1>
+		<div class="button wow bounceInUp" href="#main" style="margin-top: 80px;"><a href="#main">Заказать звонок специалиста!</a></div>-->
+	</div>
+	<div class="col-md-7">
+	<form class="phonecard text-center" id="form">
+		  <div class="field">
+		    <span class="head">Мы вам<br>перезвоним<br></span>
+		    <div class="form-group">
+		      <input type="text" required="required" name="name" />
+		      <label for="input" class="control-label">Имя</label><i class="bar"></i>
+		    </div>
+		    <div class="form-group">
+		      <input type="text" required="required" name="phone" />
+		      <label for="input" class="control-label">Телефон</label><i class="bar"></i>
+		    </div>
+		    <div class="button-container">
+		      <input type="submit" class="btn" value="Заказать!"/>
+		    </div>
+		  </div>
+		 </form>
+	</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+<div class="" id="price">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cd-tabs">
+	<nav class="text-center">
+		<ul class="cd-tabs-navigation ">
+			<li>  <a data-content="inbox" class="selected"> <img src="pic/1.png"> <br>Проводка</a></li>
+			<li> <a data-content="new"> <img src="pic/2.png"> <br>Подключение</a></li>
+			<li> <a data-content="gallery"> <img src="pic/3.png"> <br>Монтаж ЛЭП</a></li>
+			<li> <a data-content="store"> <img src="pic/4.png"> <br>Монтаж подстанций</a></li>
+			<li> <a data-content="trash"> <img src="pic/5.png"> <br>Абонентские услуги</a></li>
+			<li> <a data-content="settings"> <img src="pic/6.png"> <br>Проект</a></li>
+		</ul> <!-- cd-tabs-navigation -->
+	</nav>
+
+	<ul class="cd-tabs-content">
+		<li data-content="inbox" class="selected">
+			<p>Команда квалифицированных специалистов в Новосибирске предоставляет услуги по ремонту и замене бытовых электросетей, как в частном секторе, так и для промышленных организаций и офисов.</p>
+
+			<iframe width="700" height="400" src="https://www.youtube.com/embed/nhMVeT9LjGY" frameborder="0" allowfullscreen class="text-center" style="margin: 20px 80px 20px 80px;"></iframe>
+
+			<p>Сложно переоценить значение надежной и исправной электросети. Неисправная электропроводка несет угрозу не только технике, но и жизни хозяина. Замену электропроводки необходимо доверить профессионалам. Истечение срока службы проводки, слишком большие нагрузки из-за использования большого количества бытовой техники, могут стать причиной возникновения пожара.</p>
+
+			<p>Специалисты нашей компании составят электромонтажную схему, учитывая пожелания заказчика по размещению розеток и выключателей. Затем проведут замену проводки с использованием проводов, соответствующих требованиям современных бытовых электросетей.</p>
+
+			<table class="table table-striped">
+				<tr>
+					<td>Прокладка кабеля (сечение 1,5-10 мм²)</td>
+					<td>45 р.</td>
+					<td>п.м.</td>
+				</tr>
+				<tr>
+					<td>Прокладка кабеля (сечение 10-25 мм²)</td>
+					<td>90 р.</td>
+					<td>п.м.</td>
+				</tr>
+				<tr>
+					<td>Штроба (кирпич/бетон)</td>
+					<td>80 р./200 р.</td>
+					<td>п.м.</td>
+				</tr>
+				
+				<tr>
+					<td>Отверстие под подрозетники (кирпич/бетон)</td>
+					<td>80 р./200 р.</td>
+					<td>шт.</td>
+				</tr>
+				<tr>
+					<td>Прокладка кабеля TV и интернета </td>
+					<td>30 р.</td>
+					<td>п.м.</td>
+				</tr>
+			</table>
+		</li>
+
+		<li data-content="new">
+			<p>В процессе ремонта часто возникает необходимость в переносе розеток на новое место. В первую очередь необходимо определить  количество розеток, которые  вам необходимо перенести, и какое  расположение для них будет максимально функциональным. Важно учесть и как поменяется освещение – будут ли установлены точечные светильники под натяжной потолок или останется люстра. Такие вопросы лучше доверять квалифицированному специалисту, поэтому установка розеток с нашей помощью - эффективное решение этой проблемы с гарантией качества!</p>
+
+			<p>При установке и подключении бытовых приборов необходимо учитывать то, что при этом требуется соблюдение большого количества технических особенностей и нюансов, в том числе и техники безопасности, справиться с которыми может только грамотный специалист, профессионально занимающийся подобной деятельностью, а не мастер - любитель.</p>
+
+			<p>Наша электромонтажная компания выполняет любые услуги по подключению всевозможной бытовой техники и электроприборов в Новосибирске, независимо от сложности подключения и объема выполняемых работ. Обратившись к нам один раз, в дальнейшем Вы станете нашими постоянными клиентами.</p>
+			
+			<table class="table table-striped">
+				<tr>
+					<td>Монтаж подрозетников</td>
+					<td>30 р.</td>
+					<td>шт.</td>
+				</tr>
+				<tr>
+					<td>Установка розеток и выключателей</td>
+					<td>130 р.</td>
+					<td>шт.</td>
+				</tr>
+				<tr>
+					<td>Установка светильников</td>
+					<td>150 р.-</td>
+					<td>шт.</td>
+				</tr>
+				<tr>
+					<td>Установка датчиков теплого пола </td>
+					<td>300 р.</td>
+					<td>шт.</td>
+				</tr>
+			</table>
+			<br><br><br><br>
+		</li>
+
+		<li data-content="gallery">
+			<p>Передача электроэнергии и ее распределение осуществляется при помощи воздушных линий. Главным элементом этих коммуникаций, которые прокладываются на сотни тысячи километров, является установка опор (столбов) ЛЭП. Их предназначение — удерживать провода, находящиеся под напряжением, равным 35 кВ и больше при высокой температуре воздуха. </p>
+
+			<iframe width="700" height="400" src="https://www.youtube.com/embed/CAY743G-7gs" frameborder="0" allowfullscreen style="margin: 20px 80px 20px 80px;"></iframe>
+
+			<p>Монтаж и установка опор (столбов) ЛЭП выполняется с учетом особенностей конструкции опо р. Последние могут быть изготовлены из дерева, металла, железобетона, поэтому их установка связана с перемещением и подъемом крупногабаритных грузов. Грамотная и качественная установка определяют эффективный и длительный срок эксплуатации линии электропередач, а также ее безопасность.</p>
+
+			<p>Монтаж и установка опор (столбов) ЛЭП выполняется с учетом особенностей конструкции опо р. Последние могут быть изготовлены из дерева, металла, железобетона, поэтому их установка связана с перемещением и подъемом крупногабаритных грузов. Грамотная и качественная установка определяют эффективный и длительный срок эксплуатации линии электропередач, а также ее безопасность.</p>
+			
+			<table class="table table-striped">
+				<tr>
+					<td>Подключение домов к ЛЭП </td>
+					<td>2000 р.-</td>
+					<td>шт.</td>
+				</tr>
+				<tr>
+					<td>Установка опор ЛЭП</td>
+					<td>2000 р.</td>
+					<td>шт.</td>
+				</tr>
+				<tr>
+					<td>Монтаж соединительных муфт </td>
+					<td>3000 р.-</td>
+					<td>шт.</td>
+				</tr>
+			</table>
+			<br><br>
+		</li>
+
+		<li data-content="store">
+			<p>Установка трансформаторных подстанций часто является необходимым условием для получения электроэнергии во многих коттеджных или садовых образованиях. Также необходимость в установке трансформаторных подстанций может возникать для отдельно стоящих офисных, складских и производственных зданий. Правильно смонтированная трансформаторная подстанция позволяет снизить потери при передачи электроэнергии на нагрев проводов, при этом сократив эксплуатационные затраты на содержание линии электропередач (ЛЭП).</p>
+			<table class="table table-striped">
+				<tr>
+					<td>Установка и коммутация щитка</td>
+					<td>1500 р.-</td>
+					<td>шт.</td>
+				</tr>
+				<tr>
+					<td>Распред коробки</td>
+					<td>150 р.-</td>
+					<td>шт.</td>
+				</tr>
+				<tr>
+					<td>Монтаж СИПа</td>
+					<td>дог.</td>
+					<td>п.м.</td>
+				</tr>
+			</table>
+		<img src="щиток.jpg" style="margin: 20px 80px 20px 80px;">
+
+		</li>
+
+		<li data-content="settings">
+			<p>Мы осуществляем проектирование электроснабжения для объектов любой сложности. Во время разработки проекта специалисты нашей компании предусматривают все возможные ситуации по увеличению нагрузки на электрическую сеть в процессе дальнейшего развития предприятия, соответственно в проект электроснабжения мы с запасом закладываем параметры оборудования, материалов и коммутационной аппаратуры.</p>
+
+			<img src="проект.jpg" style="margin: 20px 160px 20px 110px;">
+
+			<p>Наши высококвалифицированные специалисты осуществляют проектирование электроснабжения для офисов, частных домов, деревянных домов, коттеджей, квартир, торговых, складских и производственных объектов, а также мы проектируем внешние кабельные и воздушные линии электроснабжения, трансформаторные подстанции, КТП, РУ и ВРУ, вынос кабельных и воздушных линий. У нас приемлемые цены на проектирование электросетей.</p>
+		</li>
+
+		<li data-content="trash">
+			<p>Наша компания, обладая хорошей материально-технической базой и квалифицированным персоналом, предлагает сотрудничество предприятиям, строительным организациям, управляющим компаниям. При заключении договора на абонентское электротехническое обслуживание, мы берем на себя все обязательства по выполнению всех необходимых организации электромонтажных работ.</p>
+
+			<p>Абонентское электротехническое обслуживание имеет ряд преимуществ, а именно:
+<br>1) низкая стоимость, по сравнению с разовыми заказами или штатным специалистом.
+<br>2) отсутствие необходимости заключать договор на каждый вид услуг. 
+<br>3) зная точную сумму, которая пойдет на оплату услуг электрика, вы можете планировать бюджет своей фирмы.</p>
+		</li>
+	</ul> <!-- cd-tabs-content -->
+</div> <!-- cd-tabs -->
+
+
+
+
+
+
+
+</div>
+
+
+<div class="anc">
+	<div class="button wow bounceInUp" href="#main"><a href="#main">Заказать звонок специалиста!</a></div>
+	</div>
+
+
+
+<div class="" id="works">
+<h1 class="text-center">Наши работы</h1>
+		<div id="owl-example" class="owl-carousel">
+			  <div class="item"><img src="pic/1.jpg"></div>
+			  <div class="item"><img src="pic/2.jpg"></div>
+			  <div class="item"><img src="pic/3.jpg"></div>
+			  <div class="item"><img src="pic/4.jpg"></div>
+			  <div class="item"><img src="pic/5.jpg"></div>
+			  <div class="item"><img src="pic/6.jpg"></div>
+			  <div class="item"><img src="pic/7.jpg"></div>
+			  <div class="item"><img src="pic/8.jpg"></div>
+			  <div class="item"><img src="pic/9.jpg"></div>
+			  <div class="item"><img src="pic/10.jpg"></div>
+			  <div class="item"><img src="pic/11.jpg"></div>
+			  <div class="item"><img src="pic/12.jpg"></div>
+			  <div class="item"><img src="pic/13.jpg"></div>
+			  <div class="item"><img src="pic/14.jpg"></div>
+			  <div class="item"><img src="pic/15.jpg"></div>
+			  <div class="item"><img src="pic/16.jpg"></div>
+		</div>
+</div>
+
+
+<div class="anc">
+	<div class="button wow bounceInUp"><a href="#main">Заказать звонок специалиста!</a></div>
+	</div>
+
+<div class="" id="callback">
+		<h1 class="text-center">Мы не только лучшие специалисты</h1>
+			<div class="container text-center">
+				<div class="call wow fadeInUp">
+					<h3 class="text-center">Сергей</h3>
+					<ln>
+					<p class="text-center">Большое спасибо за выполненную работу! Заменил проводку в доме и бане. Качеством работы доволен.</p>
+				</div>
+
+				<div class="call wow fadeInUp">
+					<h3 class="text-center">Иван</h3>
+					<p class="text-center">Красота!<br>Быстро. Четко. Все как и обещали, спасибо большое!</p>
+				</div>
+
+				<div class="call wow fadeInUp">
+					<h3 class="text-center">Яна</h3>
+					<p class="text-center">Замечательные ребята! Опыт, качество + оптимальные расценки! Рекомендую не пожалеете.</p>
+				</div>
+
+				<div class="call wow fadeInUp">
+					<h3 class="text-center">Миша</h3>
+					<p class="text-center">Еще раз хочу поблагодарить Вас за проделанную работу.<br>
+		Ребята заменили все проводку в доме, быстро, качественно и что не мало важно по хорошим ценам.</p>
+				</div>
+
+				<div class="call wow fadeInUp">
+					<h3 class="text-center">Ирена</h3>
+					<p class="text-center">Хочу выразить большую благодарность, за выполенную качественную работу! Расценки оптимальные, сделанно всё профессионально и быстро, так держать! Отдельное спасибо Александру, буду обращаться, а так же советовать всем моим коллегам. Спасибочки!!!</p>
+				</div>
+
+				<div class="call wow fadeInUp">
+					<h3 class="text-center">Петр</h3>
+					<p class="text-center">Хочу поблагодарить за проделанную работу. Александр, вам отдельное спасибо. Очень профессионально, грамотно все объяснил, дал ценные советы. Быстро приехали, сделали и составили догово р. Буду рад с вами продолжить сотрудничество в дальнейшем.</p>
+				</div>
+
+				<div class="call wow fadeInUp">
+					<h3 class="text-center">Надежда</h3>
+					<p class="text-center">Долго искала электриков для замены проводки. Приходили,смотрели,но сразу хотелось с ними расстаться. Позвонила в эту организацию,сразу почувствовался профессионализм в разговоре. Рекомендую и советую.</p>
+				</div>
+
+				<div class="call wow fadeInUp">
+					<h3 class="text-center">Ирина</h3>
+					<p class="text-center">Хотим выразить огромную благодарность Александру и Денису! Сделали разводку в частном доме, очень быстро, качественно и аккуратно. Помогли советами по расположению электрики и электроприборов в доме. С ними очень легко и приятно работать! Цены очень порадовали! Рекомендуем!!!</p>
+				</div>
+
+				<div class="call wow fadeInUp">
+					<h3 class="text-center">Евгений</h3>
+					<p class="text-center">Ребята супер!!! Сотрудничаем с этой командой не в первый раз и не первый год. Работой ребят оччччень довольны: всё выполняется в кратчайшие сроки, профессионально, с внесением коррективов в работу(что немаловажно)</p>
+				</div>
+
+	</div>
+
+
+</div>
+
+
+<div class="block" id="buy" style="height: 700px;">
+	<div id="map"></div>
+	<div id="undermap">
+		<div id="card">
+			<h2>OOO «НСК Электро»</h2>
+			<h4>Электромонтажные работы в Новосибирске</h4><br>
+			<h4>Наши контактные телефоны:</h4>
+			<h3>Александр<br>244-50-03<br>8 (913) 764-05-90</h3>
+			<h3>Денис<br>244-54-47<br>8 (913) 907-67-32 </h3>
+		</div>
+
+		
+
+
+		
+	</div>
+</div>
+
+
+
+<header style="width: 100%; " >
+<div class="wrapper" style="padding-top: 0px; height: 100px;">
+	
+	<!-- Logo -->
+	<a href="/" class="logo" style="color: #000; margin-top: 40px; position: relative; margin-top: 30px;">
+		<p>
+			лидер в сфере электрики
+		</p>
+	</a>
+
+
+	<p style="position: relative; top: -60px;">
+			Разработанно студией <a href="http://cosenica.ru" class="wow fadeIn" style="color: #9999fe; margin-top: 0px;">Cose'ница</a>
+		</p>
+	
+	<!-- Button -->
+	
+	
+	<div class="separator"></div>
+	
+	<!-- Phone -->
+	<div class="contacts" style="margin-top: -120px; ">
+		<a href="tel:84952222682" class="phone transition">
+			<span class="transition">8 (495) </span>222-26-82</a>
+		круглосуточно, без выходных
+
+		<div style="margin-top: 35px; height: 35px; width: 120px" class="button"><a style="margin-top: -20px; font-size: 18px; line-height: 30px; margin-left: -1px;" href="#buy">Заказать!</a></div>
+	</div>
+	
+	<div class="clear"></div>
+	
+</div>
+</header>
+
+
+
+
+<script type="text/javascript">
+	$(window).scroll(function(){
+    var windowScroll = $(window).scrollTop();
+
+  if(windowScroll > $(window).height() - 150) // - высота меню) {
+    $(".menu").addClass(".topMenu");
+  } else {
+    $(".menu").removeClass(".topMenu");
+  }
+    
+});
+</script>
+
+
+<script type="text/javascript">
+	$(function () {
+    $(window).scroll(function(){
+        $(".menu").each(function () {
+           var window_top = $(window).scrollTop();
+           var div_top = $(this).offset().top;
+           var windowScroll = $(window).scrollTop();
+            if (windowScroll > 110){
+                $(".menu").removeClass('abs_menu');
+                $(this).addClass('fix_menu');}
+            else{
+                $(this).removeClass('fix_menu');};
+        });
+    });
+});
+</script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "send.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отпрвлено!");
+            }
+   		 });
+	}); 
+});    
+</script>
+
+<script type="text/javascript">
+	$('#tabs')
+    .tabs()
+    .addClass('ui-tabs-vertical ui-helper-clearfix');
+</script>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+ 
+  $("#owl-example").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+ 
+      items : 4,
+      itemsDesktop : false 
+ 
+  });
+ 
+});
+
+</script>
+
+
+
+
+<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<script type="text/javascript">
+    var map;
+
+    DG.then(function () {
+        map = DG.map('map', {
+            center: [54.982, 82.89],
+            zoom: 16
+        });
+    });
+</script>
+<script type="text/javascript">
+    var map;
+
+    DG.then(function () {
+        map = DG.map('map', {
+            center: [54.98, 82.89],
+            zoom: 13
+        });
+
+        DG.marker([54.98, 82.89]).addTo(map);
+    });
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#menu-center a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#menu-center ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+</script>
+
+
+<script type="text/javascript"> 
+    $(".spoiler-trigger").click(function() {
+      $(this).parent().next().collapse('show');
+    });
+    $(".spoiler-trigger").click(function() {
+      $(this).parent().next().collapse('toggle');
+    });
+</script> 
+
+
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
